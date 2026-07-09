@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecte 1 ITAlumni - Job Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mobile-view">
+    <div class="app-page">
+
+      <header class="app-header">
+        <button class="icon-btn" aria-label="Desats">&#128203;</button>
+        <h1>Home</h1>
+        <div class="avatar"></div>
+      </header>
+
+      <div class="search-bar">
+        <span class="icon">&#128269;</span>
+        <input type="search" placeholder="Search alumni...">
+      </div>
+
+      <main class="app-content">
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-image"></div>
+            <h3>Networking</h3>
+            <p>Connect with professionals in your field.</p>
+            <a href="networking.html" class="btn btn-outline btn-card">Explore</a>
+          </article>
+
+          <article class="card">
+            <div class="card-image"></div>
+            <h3>Job Opportunities</h3>
+            <p>Discover openings tailored to your skills.</p>
+            <a href="jobPortal.html" class="btn btn-outline btn-card">Search Jobs</a>
+          </article>
+        </div>
+      </main>
+      <footer>
+        <nav class="bottom-nav">
+          <a href="home.html" class="nav-item active">
+            <span class="nav-icon">&#127968;</span>
+          Home
+          </a>
+          <a href="networking.html" class="nav-item">
+          <span class="nav-icon">&#128101;</span>
+          Networking
+          </a>
+          <a href="jobPortal.html" class="nav-item">
+          <span class="nav-icon">&#128188;</span>
+          Job Portal
+          </a>
+          <a href="ProfileUpdate.html" class="nav-item">
+            <span class="nav-icon">&#128100;</span>
+            Profile
+          </a>
+        </nav>
+      </footer>
+    </div>
+  </div>
+  <div class="desktop-view">
+    <header class="navbar">
+      <div class="nav-logo">Xllumni</div>
+      <nav class="nav-links">
+        <a href="home.html" class="active">Inici</a>
+        <a href="networking.html">Xarxa</a>
+        <a href="jobPortal.html">Oportunitats de feina</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="signup.html" class="btn btn-outline btn-pill">Apunta't</a>
+        <a href="#" class="btn btn-solid btn-pill">Com et veuen?</a>
+      </div>
+    </header>
+    <section class="hero">
+      <h1>Benvingut, Alumni</h1>
+      <p>Connectant i empoderant a la nostra comunitat global d'alumnes</p>
+      <div class="hero-actions">
+        <a href="signup.html" class="btn btn-solid btn-pill">Uneix-te</a>
+        <a href="#" class="btn btn-outline btn-pill">Mira que fem</a>
+      </div>
+      <div class="hero-media">
+        <!-- tu imagen/vídeo manual, ej: <img src="hero.jpg" alt=""> -->
+      </div>
+    </section>
+    <section class="benefits">
+      <h2>Què guanyes en formar-ne part?</h2>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div class="icon">&#127891;</div>
+          <p>Comparteix i no perdis el contacte: Puja els teus moments importants, explica com va anar i queda amb els teus companys. Una xarxa per estar més a prop.</p>
+          <a href="#" class="btn btn-solid btn-pill">Apunta't ja</a>
+        </article>
+        <article class="benefit-card">
+          <div class="icon">&#128172;</div>
+          <p>Participa en discussions: Intercanvia coneixements, punts de vista i opinions sobre temes que t'interessen.</p>
+          <a href="#" class="btn btn-light btn-pill">Apunta't ja</a>
+        </article>
+        <article class="benefit-card">
+          <div class="icon">&#128101;</div>
+          <p>Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats i crea records per durar tota la vida.</p>
+          <a href="#" class="btn btn-light btn-pill">Apunta't ja</a>
+        </article>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <div class="person">
+            <div class="avatar"></div>
+            <div>
+              <div class="name">Mikel</div>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="quote">"Gràcies a IT Alumni vaig aconseguir la feina dels meus somnis en el món tech amb el seu increïble programa de mentoria."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="person">
+            <div class="avatar"></div>
+            <div>
+              <div class="name">Emma</div>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="quote">"La meva xarxa d'aquesta comunitat ha estat clau: va revolucionar la meva carrera i em va mostrar camins insospitats."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="person">
+            <div class="avatar"></div>
+            <div>
+              <div class="name">Laia</div>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="quote">"IT Alumni em va donar les eines i l'autoestima per fer realitat el meu somni d'emprendre."</p>
+        </article>
+      </div>
+      <div class="carousel-nav">
+        <button type="button" aria-label="Anterior">&#8249;</button>
+        <button type="button" aria-label="Següent">&#8250;</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="newsletter">
+        <h3>"No et perdis res, subscriu-te!"</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="El teu email" required>
+          <button type="submit">Subscriu-te</button>
+        </form>
+      </div>
+
+      <div class="footer-main">
+        <div class="footer-logo">Xllumni</div>
+        <nav class="footer-links">
+          <a href="#">Sobre nosaltres</a>
+          <a href="#">Funcionalitats</a>
+          <a href="#">Centre d'ajuda</a>
+          <a href="#">Contacta'ns</a>
+          <a href="#">FAQs</a>
+          <a href="jobPortal.html">Oportunitats laborals</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <select><option>Català</option></select>
+        <p>© 2026 Xllumni · Privadesa · Termes d'ús</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">&#9658;</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

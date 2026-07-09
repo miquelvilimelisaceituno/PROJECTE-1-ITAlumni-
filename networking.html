@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecte 1 ITAlumni - Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mobile-view">
+    <div class="app-page">
+    <header class="app-header">
+      <a href="home.html" class="icon-btn" aria-label="Enrere">&#8592;</a>
+      <h1>Networking</h1>
+      <div class="avatar"></div>
+    </header>
+
+    <div class="search-bar">
+      <span class="icon">&#128269;</span>
+      <input type="search" placeholder="Search alumni...">
+    </div>
+
+      <main class="app-content">
+      <div class="people-list">
+        <article class="person-row">
+          <div class="person-info">
+            <h3>John Doe</h3>
+            <p class="class-year">Class of 2010</p>
+            <p class="role">CEO at TechSolutions Inc.</p>
+          </div>
+          <div class="person-image"></div>
+        </article>
+        <article class="person-row">
+          <div class="person-info">
+            <h3>Sarah Johnson</h3>
+            <p class="class-year">Class of 2015</p>
+            <p class="role">Marketing Director at GreenWave</p>
+          </div>
+          <div class="person-image"></div>
+        </article>
+
+        <article class="person-row">
+          <div class="person-info">
+            <h3>Michael Brown</h3>
+            <p class="class-year">Class of 2008</p>
+            <p class="role">Founder of EduLearn Academy</p>
+          </div>
+          <div class="person-image"></div>
+        </article>
+        <article class="person-row">
+          <div class="person-info">
+            <h3>Emily Davis</h3>
+            <p class="class-year">Class of 2012</p>
+            <p class="role">Research Scientist at BioTech Labs</p>
+          </div>
+          <div class="person-image"></div>
+        </article>
+
+        <article class="person-row">
+          <div class="person-info">
+            <h3>James Lee</h3>
+            <p class="class-year">Class of 2005</p>
+            <p class="role">Managing Partner at Lee &amp; Associates</p>
+          </div>
+          <div class="person-image"></div>
+        </article>
+      </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="home.html" class="nav-item">
+        <span class="nav-icon">&#127968;</span>
+        Home
+      </a>
+      <a href="networking.html" class="nav-item active">
+        <span class="nav-icon">&#128101;</span>
+        Networking
+      </a>
+      <a href="jobPortal.html" class="nav-item">
+        <span class="nav-icon">&#128188;</span>
+        Job Portal
+      </a>
+      <a href="ProfileUpdate.html" class="nav-item">
+        <span class="nav-icon">&#128100;</span>
+        Profile
+      </a>
+    </nav>
+  </div>
+  </div>
+  <div class="desktop-view">
+
+    <header class="navbar">
+      <div class="nav-logo"><span class="mark">&#9650;</span>Alumni Connect</div>
+      <nav class="nav-links">
+        <a href="dashboard.html">Home</a>
+        <a href="#" class="active">Networking</a>
+        <a href="jobPortal.html">Job Opportunities</a>
+      </nav>
+      <div class="nav-icons">
+        <span>&#128269;</span>
+        <span>&#128276;</span>
+        <span>&#9881;</span>
+        <div class="avatar"></div>
+      </div>
+    </header>
+
+    <div class="networking-toolbar">
+      <div class="search-bar-desktop">
+        <span class="icon">&#128269;</span>
+        <input type="search" placeholder="Search alumni...">
+      </div>
+      <div class="filter-tabs">
+        <span class="filter-label">Filters:</span>
+        <a href="#">Recent Activity</a>
+        <a href="#" class="active">Popular</a>
+        <a href="#">Most Connected</a>
+      </div>
+    </div>
+
+    <div class="people-grid">
+      <article class="person-card">
+        <div class="person-name">Jane Smith</div>
+        <p class="person-role">Co-Founder at ABC Inc</p>
+        <p class="person-location">New York, NY</p>
+        <a href="#" class="btn btn-solid btn-pill">Message</a>
+      </article>
+      <article class="person-card">
+        <div class="person-name">John Doe</div>
+        <p class="person-role">Product Manager at XYZ Corp</p>
+        <p class="person-location">San Francisco, CA</p>
+        <a href="#" class="btn btn-solid btn-pill">Message</a>
+      </article>
+      <article class="person-card">
+        <div class="person-name">Alice Johnson</div>
+        <p class="person-role">Senior Developer at Tech Solutions</p>
+        <p class="person-location">Remote</p>
+        <a href="#" class="btn btn-solid btn-pill">Message</a>
+      </article>
+      <article class="person-card">
+        <div class="person-name">David Brown</div>
+        <p class="person-role">Marketing Specialist at Brand Co</p>
+        <p class="person-location">Chicago, IL</p>
+        <a href="#" class="btn btn-solid btn-pill">Message</a>
+      </article>
+    </div>
+
+    <section class="activity-section">
+      <h2>Recent Activity</h2>
+      <ul class="activity-list">
+        <li>Jane Smith started following John Doe</li>
+        <li>David Brown and John Doe connected</li>
+        <li>John Doe shared "Top 10 Product Management Tips" article</li>
+        <li>Jane Smith and David Brown connected</li>
+      </ul>
+    </section>
+
+    <section class="suggestions-section">
+      <h2>Suggestions for You</h2>
+      <div class="people-stack">
+        <article class="person-card">
+          <div class="person-name">Jane Smith</div>
+          <p class="person-role">Co-Founder at ABC Inc</p>
+          <p class="person-location">New York, NY</p>
+          <a href="#" class="btn btn-solid btn-pill">Connect</a>
+        </article>
+        <article class="person-card">
+          <div class="person-name">John Doe</div>
+          <p class="person-role">Product Manager at XYZ Corp</p>
+          <p class="person-location">San Francisco, CA</p>
+          <a href="#" class="btn btn-solid btn-pill">Connect</a>
+        </article>
+        <article class="person-card">
+          <div class="person-name">Alice Johnson</div>
+          <p class="person-role">Senior Developer at Tech Solutions</p>
+          <p class="person-location">Remote</p>
+          <a href="#" class="btn btn-solid btn-pill">Connect</a>
+        </article>
+        <article class="person-card">
+          <div class="person-name">David Brown</div>
+          <p class="person-role">Marketing Specialist at Brand Co</p>
+          <p class="person-location">Chicago, IL</p>
+          <a href="#" class="btn btn-solid btn-pill">Connect</a>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
