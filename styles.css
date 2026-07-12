@@ -423,10 +423,6 @@ html, body {
   background: var(--placeholder-bg);
 }
 
-.is-hidden {
-  display: none;
-}
-
 /*JOBPORTAL*/
 
 .filters {
@@ -530,16 +526,6 @@ html, body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-
-  .brand-logo {
-  height: 28px;
-  width: auto;
-  display: block;
-  }
-
-  .brand-logo--footer {
-  height: 32px;
   }
 
   .nav-links {
@@ -760,7 +746,7 @@ html, body {
   .footer-main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1100px;
     margin: 0 auto;
     padding-top: 30px;
@@ -1081,4 +1067,3 @@ html, body {
   }
 
 }
-

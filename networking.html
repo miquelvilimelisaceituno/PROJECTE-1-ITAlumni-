@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="filtro.js" defer></script>
 </head>
 <body>
   <div class="mobile-view">
@@ -25,8 +24,8 @@
     </div>
 
       <main class="app-content">
-      <div class="people-list" data-filter-list>
-        <article class="person-row" data-filter-item data-id="john-doe">
+      <div class="people-list">
+        <article class="person-row">
           <div class="person-info">
             <h3>John Doe</h3>
             <p class="class-year">Class of 2010</p>
@@ -34,7 +33,7 @@
           </div>
           <div class="person-image"></div>
         </article>
-        <article class="person-row" data-filter-item data-id="sarah-johnson">
+        <article class="person-row">
           <div class="person-info">
             <h3>Sarah Johnson</h3>
             <p class="class-year">Class of 2015</p>
@@ -43,7 +42,7 @@
           <div class="person-image"></div>
         </article>
 
-        <article class="person-row" data-filter-item data-id="michael-brown">
+        <article class="person-row">
           <div class="person-info">
             <h3>Michael Brown</h3>
             <p class="class-year">Class of 2008</p>
@@ -51,7 +50,7 @@
           </div>
           <div class="person-image"></div>
         </article>
-        <article class="person-row" data-filter-item data-id="emily-davis">
+        <article class="person-row">
           <div class="person-info">
             <h3>Emily Davis</h3>
             <p class="class-year">Class of 2012</p>
@@ -60,7 +59,7 @@
           <div class="person-image"></div>
         </article>
 
-        <article class="person-row" data-filter-item data-id="james-lee">
+        <article class="person-row">
           <div class="person-info">
             <h3>James Lee</h3>
             <p class="class-year">Class of 2005</p>
@@ -74,7 +73,7 @@
     <nav class="bottom-nav">
       <a href="home.html" class="nav-item">
         <span class="nav-icon">&#127968;</span>
-        Inici
+        Home
       </a>
       <a href="networking.html" class="nav-item active">
         <span class="nav-icon">&#128101;</span>
@@ -96,7 +95,7 @@
     <header class="navbar">
       <div class="nav-logo"><span class="mark">&#9650;</span>Alumni Connect</div>
       <nav class="nav-links">
-        <a href="dashboard.html">Inici</a>
+        <a href="dashboard.html">Home</a>
         <a href="#" class="active">Networking</a>
         <a href="jobPortal.html">Job Opportunities</a>
       </nav>
@@ -116,31 +115,31 @@
       <div class="filter-tabs">
         <span class="filter-label">Filters:</span>
         <a href="#">Recent Activity</a>
-        <a href="#" data-sort="popular" class="active">Popular </a>
+        <a href="#" class="active">Popular</a>
         <a href="#">Most Connected</a>
       </div>
     </div>
 
-    <div class="people-grid" data-filter-list>
-      <article class="person-card" data-filter-item data-id="jane-smith">
+    <div class="people-grid">
+      <article class="person-card">
         <div class="person-name">Jane Smith</div>
         <p class="person-role">Co-Founder at ABC Inc</p>
         <p class="person-location">New York, NY</p>
         <a href="#" class="btn btn-solid btn-pill">Message</a>
       </article>
-      <article class="person-card" data-filter-item data-id="john-doe">
+      <article class="person-card">
         <div class="person-name">John Doe</div>
         <p class="person-role">Product Manager at XYZ Corp</p>
         <p class="person-location">San Francisco, CA</p>
         <a href="#" class="btn btn-solid btn-pill">Message</a>
       </article>
-      <article class="person-card" data-filter-item data-id="alice-johnson">
+      <article class="person-card">
         <div class="person-name">Alice Johnson</div>
         <p class="person-role">Senior Developer at Tech Solutions</p>
         <p class="person-location">Remote</p>
         <a href="#" class="btn btn-solid btn-pill">Message</a>
       </article>
-      <article class="person-card" data-filter-item data-id="david-brown">
+      <article class="person-card">
         <div class="person-name">David Brown</div>
         <p class="person-role">Marketing Specialist at Brand Co</p>
         <p class="person-location">Chicago, IL</p>
@@ -161,25 +160,25 @@
     <section class="suggestions-section">
       <h2>Suggestions for You</h2>
       <div class="people-stack">
-        <article class="person-card" data-filter-item data-id="jane-smith">
+        <article class="person-card">
           <div class="person-name">Jane Smith</div>
           <p class="person-role">Co-Founder at ABC Inc</p>
           <p class="person-location">New York, NY</p>
           <a href="#" class="btn btn-solid btn-pill">Connect</a>
         </article>
-        <article class="person-card" data-filter-item data-id="john-doe">
+        <article class="person-card">
           <div class="person-name">John Doe</div>
           <p class="person-role">Product Manager at XYZ Corp</p>
           <p class="person-location">San Francisco, CA</p>
           <a href="#" class="btn btn-solid btn-pill">Connect</a>
         </article>
-        <article class="person-card" data-filter-item data-id="alice-johnson">
+        <article class="person-card">
           <div class="person-name">Alice Johnson</div>
           <p class="person-role">Senior Developer at Tech Solutions</p>
           <p class="person-location">Remote</p>
           <a href="#" class="btn btn-solid btn-pill">Connect</a>
         </article>
-        <article class="person-card" data-filter-item data-id="david-brown">
+        <article class="person-card">
           <div class="person-name">David Brown</div>
           <p class="person-role">Marketing Specialist at Brand Co</p>
           <p class="person-location">Chicago, IL</p>
