@@ -10,47 +10,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="signup-page">
-    <div class="signup-card">
-      <h1>Crea un compte</h1>
-      <p class="subtitle">Uneix-te a nosaltres per connectar-te i compartir oportunitats!</p>
+<div class="l-auth-page">
+  <div class="auth-card">
+    <h1 class="auth-card__title">Crea un compte</h1>
+    <p class="auth-card__subtitle">Uneix-te a nosaltres per connectar-te i compartir oportunitats!</p>
 
-      <form class="signup-form">
-        <div class="input-group">
-          <span class="icon">&#128100;</span>
-          <input type="text" placeholder="Posa el teu nom" required>
-        </div>
-        <div class="input-group">
-          <span class="icon">&#128100;</span>
-          <input type="text" placeholder="Posa el teu cognom" required>
-        </div>
-        <div class="input-group">
-          <span class="icon">&#9993;</span>
-          <input type="email" placeholder="El teu correu electrònic" required>
-        </div>
-        <div class="input-group">
-          <span class="icon">&#128274;</span>
-          <input type="password" placeholder="Crea una contrasenya" required>
-        </div>
-
-        <label class="terms">
-          <input type="checkbox" required>
-          Accepto els Termes i Condicions
-        </label>
-
-        <button type="submit" class="btn btn-solid btn-block">Registra't</button>
-      </form>
-
-      <div class="divider">o</div>
-
-      <div class="social-buttons">
-        <button type="button" class="btn btn-block btn-social btn-apple" disabled>Continua amb Apple</button>
-        <button type="button" class="btn btn-block btn-social btn-google">Continua amb Google</button>
-        <button type="button" class="btn btn-block btn-social btn-facebook">Continua amb Facebook</button>
+    <form class="auth-card__form">
+      <div class="field">
+        <span class="field__icon">&#128100;</span>
+        <input type="text" class="field__input" placeholder="Posa el teu nom" required>
+      </div>
+      <div class="field">
+        <span class="field__icon">&#128100;</span>
+        <input type="text" class="field__input" placeholder="Posa el teu cognom" required>
+      </div>
+      <div class="field">
+        <span class="field__icon">&#9993;</span>
+        <input type="email" class="field__input" placeholder="El teu correu electrònic" required>
+      </div>
+      <div class="field">
+        <span class="field__icon">&#128274;</span>
+        <input type="password" class="field__input" placeholder="Crea una contrasenya" required>
       </div>
 
-      <p class="footer-text">Ja t'has registrat? <a href="login.html">Inicia sessió</a></p>
+      <label class="consent-check">
+        <input type="checkbox" class="consent-check__input" required>
+        Accepto els Termes i Condicions
+      </label>
+
+      <button type="submit" class="button button--solid button--block">Registra't</button>
+    </form>
+
+    <div class="divider">o</div>
+
+    <div class="social-auth">
+      <button type="button" class="button button--block button--social button--apple">Continua amb Apple</button>
+      <button type="button" class="button button--block button--social button--google">Continua amb Google</button>
+      <button type="button" class="button button--block button--social button--facebook">Continua amb Facebook</button>
     </div>
+
+    <p class="auth-card__footnote">Ja t'has registrat? <a href="login.html">Inicia sessió</a></p>
   </div>
+</div>
 </body>
 </html>

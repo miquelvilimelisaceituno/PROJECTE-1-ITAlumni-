@@ -4,7 +4,7 @@ const clicksPerfiles = {
   "michael-brown": 95,
   "emily-davis": 250,
   "james-lee": 60,
-  "jane-smith": 400,
+  "jane-smith": 100,
   "alice-johnson": 150,
   "david-brown": 40,
 };
@@ -30,8 +30,8 @@ document.querySelectorAll('[data-sort="popular"]').forEach((boton) => {
 });
 
 function marcarActivo(boton) {
-  boton.parentElement.querySelectorAll('a').forEach((a) => a.classList.remove('active'));
-  boton.classList.add('active');
+  boton.parentElement.querySelectorAll('a').forEach((a) => a.classList.remove('is-active'));
+  boton.classList.add('is-active');
 }
 
 function filtrarPorTexto(contenedor, texto) {
@@ -45,7 +45,7 @@ function filtrarPorTexto(contenedor, texto) {
   });
 }
 
-document.querySelectorAll('.search-bar input, .search-bar-desktop input').forEach((input) => {
+document.querySelectorAll('.search-bar__input').forEach((input) => {
   input.addEventListener('input', (evento) => {
     document.querySelectorAll('[data-filter-list]').forEach((contenedor) => {
       filtrarPorTexto(contenedor, evento.target.value);

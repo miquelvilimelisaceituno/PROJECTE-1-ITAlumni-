@@ -23,7 +23,7 @@ html, body {
   background-color: white;
 }
 
-.btn {
+.button {
   display: inline-block;
   border: none;
   cursor: pointer;
@@ -33,22 +33,22 @@ html, body {
   text-decoration: none;
 }
 
-.btn-solid {
+.button--solid {
   background: var(--gradient-primary);
   color: var(--white);
 }
 
-.btn-outline {
+.button--outline {
   background: transparent;
   border: 1.5px solid var(--pink-primary);
   color: var(--pink-primary);
 }
 
-.mobile-view {
+.l-mobile-view {
   display: block;
 }
 
-.desktop-view {
+.l-desktop-view {
   display: none;
 }
 
@@ -56,7 +56,7 @@ html, body {
 
 .welcome-screen {
   min-height: 100vh;
-  min-height: 100dvh; /* evita saltos por la barra del navegador móvil */
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,7 +65,7 @@ html, body {
   text-align: center;
 }
 
-.welcome-content {
+.welcome-screen__content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -74,19 +74,18 @@ html, body {
   gap: 16px;
 }
 
-.logo {
+.welcome-screen__logo {
   width: 140px;
 }
 
-.subtitle {
+.welcome-screen__subtitle {
   color: var(--text-gray);
   font-size: 15px;
   line-height: 1.4;
-  max-width: 260px; /* fuerza el salto a dos líneas como en la imagen */
+  max-width: 260px; 
 }
 
-.btn-signup {
-  width: 100%;
+.button--large {
   padding: 16px;
   border-radius: 25px;
   font-size: 18px;
@@ -95,7 +94,7 @@ html, body {
 
 /* HOME PAGE */
 
-.app-page {
+.l-app-page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -145,12 +144,12 @@ html, body {
   border-radius: 8px;
 }
 
-.search-bar .icon {
+.search-bar__icon {
   color: var(--text-gray);
   font-size: 14px;
 }
 
-.search-bar input {
+.search-bar__input {
   flex: 1;
   border: none;
   background: transparent;
@@ -158,31 +157,31 @@ html, body {
   color: var(--text-dark);
 }
 
-.search-bar input::placeholder {
+.search-bar__input::placeholder {
   color: var(--text-gray);
 }
 
-.search-bar input:focus {
+.search-bar__input:focus {
   outline: none;
 }
 
-.app-content {
+.l-app-content {
   flex: 1;
   padding: 0 20px;
 }
 
-.card-grid {
+.l-card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
 }
 
-.card {
+.feature-card {
   display: flex;
   flex-direction: column;
 }
 
-.card-image {
+.feature-card__image {
   width: 100%;
   height: 90px;
   background: var(--placeholder-bg);
@@ -190,25 +189,23 @@ html, body {
   margin-bottom: 10px;
 }
 
-.card h3 {
+.feature-card__title {
   font-size: 14px;
   font-weight: 600;
   color: var(--text-dark);
   margin-bottom: 4px;
 }
 
-.card p {
+.feature-card__text {
   font-size: 12px;
   color: var(--text-gray);
   line-height: 1.4;
   margin-bottom: 12px;
 }
 
-.btn-card {
+.button--block {
+  display: block;
   width: 100%;
-  padding: 10px 0;
-  border-radius: 6px;
-  font-size: 13px;
 }
 
 .bottom-nav {
@@ -219,7 +216,7 @@ html, body {
   border-top: 1px solid var(--border-light);
 }
 
-.nav-item {
+.bottom-nav__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,17 +226,17 @@ html, body {
   text-decoration: none;
 }
 
-.nav-item.active {
+.bottom-nav__item.is-active {
   color: var(--pink-primary);
 }
 
-.nav-item .nav-icon {
+.bottom-nav__icon {
   font-size: 18px;
 }
 
 /* SIGN UP PAGE*/
 
-.signup-page {
+.l-auth-page {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -247,7 +244,7 @@ html, body {
   background-color: var(--white);
 }
 
-.signup-card {
+.auth-card {
   width: 100%;
   background: var(--white);
   padding: 32px 24px;
@@ -255,7 +252,7 @@ html, body {
   box-shadow: none;
 }
 
-.signup-card h1 {
+.auth-card__title {
   font-size: 26px;
   font-weight: 600;
   text-align: center;
@@ -263,19 +260,21 @@ html, body {
   margin-bottom: 8px;
 }
 
-.signup-card .subtitle {
+.auth-card__subtitle {
   font-size: 14px;
+  line-height: 1.4;
   text-align: center;
   color: var(--text-gray);
-  margin-bottom: 28px;
+  margin: 0 auto 28px;
+  max-width: 100%;
 }
 
-.input-group {
+.field {
   position: relative;
   margin-bottom: 14px;
 }
 
-.input-group .icon {
+.field__icon {
   position: absolute;
   left: 14px;
   top: 50%;
@@ -284,7 +283,7 @@ html, body {
   color: var(--text-gray);
 }
 
-.input-group input {
+.field__input {
   width: 100%;
   padding: 12px 14px 12px 38px;
   background: var(--input-bg);
@@ -294,16 +293,24 @@ html, body {
   color: var(--text-dark);
 }
 
-.input-group input::placeholder {
+.auth-card__form .button--block {
+  margin: 0 auto;
+  padding: 12px 14px;
+  border-radius: 25px;
+  font-size: 15px;
+  background: var(--pink-primary);
+}
+
+.field__input::placeholder {
   color: #9CA3AF;
 }
 
-.input-group input:focus {
+.field__input:focus {
   outline: none;
   border-color: var(--pink-primary);
 }
 
-.terms {
+.consent-check {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -313,7 +320,7 @@ html, body {
   cursor: pointer;
 }
 
-.terms input[type="checkbox"] {
+.consent-check__input {
   width: 16px;
   height: 16px;
   accent-color: var(--pink-primary);
@@ -336,42 +343,47 @@ html, body {
   background: var(--border-light);
 }
 
-.social-buttons {
+.social-auth {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 12px;
 }
 
-.btn-social {
+.social-auth .button--block {
+  padding: 12px 14px;
+  border-radius: 6px;
+}
+
+.button--social {
   font-size: 14px;
   font-weight: 500;
 }
 
-.btn-apple {
+.button--apple {
   background: #FBE9F0;
   color: #D9A3C0;
   cursor: not-allowed;
 }
 
-.btn-google {
+.button--google {
   background: #FBE9E7;
   color: #C0392B;
 }
 
-.btn-facebook {
+.button--facebook {
   background: #E8F1FC;
   color: #1877F2;
 }
 
-.footer-text {
+.auth-card__footnote {
   text-align: center;
   font-size: 13px;
   color: var(--text-dark);
   margin-top: 8px;
 }
 
-.footer-text a {
+.auth-card__footnote a {
   color: var(--pink-primary);
   font-weight: 600;
   text-decoration: none;
@@ -379,48 +391,69 @@ html, body {
 
 /*Networking page*/
 
-.people-list {
+.l-people-list {
   display: flex;
   flex-direction: column;
 }
 
-.person-row {
+.person-card {
+  padding: 16px 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.person-card--row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  padding: 16px 0;
+  border-top: none;
   border-bottom: 1px solid var(--border-light);
 }
 
-.person-row:first-child {
+.person-card--row:first-child {
   border-top: 1px solid var(--border-light);
 }
 
-.person-info h3 {
+.person-card__name {
   font-size: 14px;
   font-weight: 600;
   color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.person-card--row .person-card__name {
   margin-bottom: 4px;
 }
 
-.person-info .class-year {
+.person-card__meta {
   font-size: 12px;
-  color: var(--pink-primary);
+  color: var(--text-gray);
+  margin-bottom: 4px;
+}
+
+.person-card--row .person-card__meta {
   margin-bottom: 2px;
 }
 
-.person-info .role {
-  font-size: 12px;
-  color: var(--text-gray);
+.person-card--row .person-card__meta:last-child {
+  margin-bottom: 0;
 }
 
-.person-image {
+.person-card__meta--accent {
+  color: var(--pink-primary);
+}
+
+.person-card__image {
   width: 72px;
   height: 72px;
   flex-shrink: 0;
   border-radius: 8px;
   background: var(--placeholder-bg);
+}
+
+.person-card__action {
+  display: inline-block;
+  margin-top: 8px;
 }
 
 .is-hidden {
@@ -429,7 +462,7 @@ html, body {
 
 /*JOBPORTAL*/
 
-.filters {
+.l-filter-chips {
   display: flex;
   gap: 20px;
   padding: 4px 20px 16px;
@@ -446,56 +479,44 @@ html, body {
   cursor: pointer;
 }
 
-.filter-chip .caret {
+.filter-chip__caret {
   font-size: 10px;
   color: var(--text-gray);
 }
 
-.job-list {
+.l-job-list {
   display: flex;
   flex-direction: column;
 }
 
-.job-row {
-  display: flex;
-  justify-content: space-between;
+.job-card--row {
   gap: 12px;
+  background: none;
+  border: none;
+  border-radius: 0;
   padding: 16px 0;
   border-bottom: 1px solid var(--border-light);
 }
 
-.job-row:first-child {
+.job-card--row:first-child {
   border-top: 1px solid var(--border-light);
 }
 
-.job-info h3 {
+.job-card--row .job-card__title {
   font-size: 14px;
-  font-weight: 600;
-  color: var(--text-dark);
   margin-bottom: 4px;
 }
 
-.job-info .company,
-.job-info .meta {
-  font-size: 12px;
-  color: var(--text-gray);
-  margin-bottom: 3px;
-}
-
-.job-info .meta {
-  margin-bottom: 10px;
-}
-
-.job-image {
-  width: 90px;
-  height: 90px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background: var(--placeholder-bg);
+.job-card--row .job-card__image {
   align-self: flex-start;
 }
 
-.btn-sm {
+.job-card__action {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.button--small {
   display: inline-block;
   padding: 6px 16px;
   border-radius: 6px;
@@ -503,13 +524,13 @@ html, body {
 }
 
 @media (min-width: 900px) {
-  .app-page {
+  .l-app-page {
     max-width: 720px;
     margin: 0 auto;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
   }
 
-  .card-grid {
+  .l-card-grid {
     grid-template-columns: repeat(3, 1fr); /* aprovecha el ancho extra en home */
   }
 
@@ -523,7 +544,7 @@ html, body {
     border-bottom: 1px solid var(--border-light);
   }
 
-  .nav-logo {
+  .navbar__wordmark {
     font-size: 20px;
     font-weight: 800;
     background: var(--gradient-primary);
@@ -542,26 +563,26 @@ html, body {
   height: 32px;
   }
 
-  .nav-links {
+  .navbar__links {
     display: flex;
     gap: 40px;
     font-size: 14px;
     color: var(--text-gray);
   }
 
-  .nav-links a {
+  .navbar__link {
     text-decoration: none;
     color: inherit;
     padding-bottom: 6px;
   }
 
-  .nav-links a.active {
+  .navbar__link.is-active {
     color: var(--pink-primary);
     font-weight: 600;
     border-bottom: 2px solid var(--pink-primary);
   }
 
-  .nav-actions {
+  .navbar__actions {
     display: flex;
     gap: 12px;
   }
@@ -571,28 +592,42 @@ html, body {
     padding: 80px 40px 0;
   }
 
-  .hero h1 {
+  .hero__title {
     font-size: 42px;
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 20px;
   }
 
-  .hero p {
+  .hero__text {
     font-size: 15px;
     color: var(--text-gray);
     max-width: 480px;
     margin: 0 auto 28px;
   }
 
-  .hero-actions {
+  .hero__actions {
     display: flex;
     justify-content: center;
     gap: 14px;
     margin-bottom: 48px;
   }
 
-  .hero-media {
+  .navbar__actions .button--outline,
+  .hero__actions .button--outline {
+    background: linear-gradient(135deg, rgba(135, 58, 170, 0) 0%, rgba(223, 0, 127, 0) 100%);
+    border-color: var(--pink-primary);
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .navbar__actions .button--outline:hover,
+  .hero__actions .button--outline:hover {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: var(--white);
+  }
+
+  .hero__media {
     max-width: 900px;
     min-height: 320px;
     margin: 0 auto 80px;
@@ -600,19 +635,28 @@ html, body {
     background: var(--placeholder-bg);
   }
 
+  .hero__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
   .benefits {
     text-align: center;
     padding: 0 40px 80px;
   }
 
-  .benefits h2 {
+  .benefits__title {
     font-size: 26px;
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 48px;
   }
 
-  .benefits-grid {
+  .l-benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -620,30 +664,34 @@ html, body {
     margin: 0 auto;
   }
 
-  .benefit-card .icon {
+  .benefit-card__icon {
     font-size: 30px;
     color: var(--pink-primary);
     margin-bottom: 16px;
   }
 
-  .benefit-card p {
+  .benefit-card__text {
     font-size: 13px;
     color: var(--text-gray);
     line-height: 1.6;
     margin-bottom: 20px;
   }
 
-  /* Se refiere a el estilo de los botones de benefits, pero deveria ser un hover*/
-
-  .btn-pill {
+  .button--pill {
     padding: 10px 24px;
     border-radius: 20px;
     font-size: 13px;
   }
 
-  .btn-light {
-    background: #FBE1EE;
+  .button--light {
+    background: linear-gradient(135deg, #FBE1EE 0%, #FBE1EE 100%);
     color: var(--pink-primary);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .button--light:hover {
+    background: var(--gradient-primary);
+    color: var(--white);
   }
 
   /* Testimonials*/
@@ -653,14 +701,14 @@ html, body {
     padding: 0 40px 80px;
   }
 
-  .testimonials h2 {
+  .testimonials__title {
     font-size: 22px;
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 40px;
   }
 
-  .testimonial-grid {
+  .l-testimonial-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -668,7 +716,7 @@ html, body {
     margin: 0 auto 24px;
   }
 
-  .testimonial-card .person {
+  .testimonial-card__person {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -676,36 +724,36 @@ html, body {
     margin-bottom: 10px;
   }
 
-  .testimonial-card .avatar {
+  .testimonial-card__avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background: var(--placeholder-bg);
   }
 
-  .testimonial-card .name {
+  .testimonial-card__name {
     font-weight: 600;
     font-size: 14px;
   }
 
-  .testimonial-card .stars {
+  .testimonial-card__stars {
     color: #F5A623;
     font-size: 12px;
   }
 
-  .testimonial-card .quote {
+  .testimonial-card__quote {
     font-size: 13px;
     color: var(--text-gray);
     line-height: 1.5;
   }
 
-  .carousel-nav {
+  .testimonials__nav {
     display: flex;
     justify-content: center;
     gap: 12px;
   }
 
-  .carousel-nav button {
+  .testimonials__nav-button {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -714,29 +762,29 @@ html, body {
     cursor: pointer;
   }
 
-  .footer {
+  .site-footer {
     background: var(--footer-dark);
     color: var(--white);
     padding: 50px 40px 30px;
   }
 
-  .newsletter {
+  .site-footer__newsletter {
     text-align: center;
     margin-bottom: 40px;
   }
 
-  .newsletter h3 {
+  .site-footer__newsletter-title {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 16px;
   }
 
-  .newsletter-form {
+  .site-footer__newsletter-form {
     display: flex;
     justify-content: center;
   }
 
-  .newsletter-form input {
+  .site-footer__newsletter-input {
     padding: 10px 16px;
     border: 1px solid #3A3B42;
     border-radius: 24px 0 0 24px;
@@ -746,7 +794,7 @@ html, body {
     width: 240px;
   }
 
-  .newsletter-form button {
+  .site-footer__newsletter-button {
     padding: 10px 24px;
     border: none;
     border-radius: 0 24px 24px 0;
@@ -757,52 +805,44 @@ html, body {
     cursor: pointer;
   }
 
-  .footer-main {
+  .site-footer__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
     padding-top: 30px;
-    border-top: 1px solid #2A2B32;
     flex-wrap: wrap;
     gap: 20px;
   }
 
-  .footer-logo {
-    font-size: 18px;
-    font-weight: 800;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .footer-links {
+  .site-footer__links {
     display: flex;
     gap: 30px;
     font-size: 13px;
-    color: #B0B1B8;
+    color: #FFFFFF;
   }
 
-  .footer-links a {
+  .site-footer__links a {
     color: inherit;
     text-decoration: none;
   }
 
-  .footer-bottom {
+  .site-footer__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     margin: 24px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #FFFFFF;
     font-size: 12px;
-    color: #7A7B82;
+    color: #FFFFFF;
     flex-wrap: wrap;
     gap: 12px;
   }
 
-  .footer-bottom select {
+  .site-footer__bottom select {
     background: #1F2026;
     color: #B0B1B8;
     border: 1px solid #3A3B42;
@@ -811,12 +851,12 @@ html, body {
     font-size: 12px;
   }
 
-  .social-icons {
+  .site-footer__socials {
     display: flex;
     gap: 10px;
   }
 
-  .social-icons a {
+  .site-footer__socials a {
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -833,13 +873,13 @@ html, body {
   
   /* SIGN UP PAGE desktop*/
 
-  .signup-page {
+  .l-auth-page {
     align-items: center;
     padding: 40px 20px;
     background: url("/images/background-image-signup.png") center/cover; 
   }
 
-  .signup-card {
+  .auth-card {
     width: 460px;
     max-width: 100%;
     padding: 48px 56px;
@@ -849,15 +889,15 @@ html, body {
 
   /*NETWORKING page Desktop*/
 
-  .mobile-view {
+  .l-mobile-view {
     display: none;
   }
 
-  .desktop-view {
+  .l-desktop-view {
     display: block;
   }
 
-  .desktop-view .nav-logo {
+  .l-desktop-view .navbar__wordmark {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -868,12 +908,12 @@ html, body {
     -webkit-text-fill-color: currentColor;
   }
 
-  .desktop-view .nav-logo .mark {
+  .l-desktop-view .navbar__wordmark .navbar__wordmark-mark {
     color: var(--pink-primary);
     font-size: 16px;
   }
 
-  .nav-icons {
+  .navbar__icons {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -881,7 +921,7 @@ html, body {
     color: var(--text-dark);
   }
 
-  .desktop-view .navbar .avatar {
+  .l-desktop-view .navbar__avatar {
     width: 34px;
     height: 34px;
   }
@@ -895,29 +935,18 @@ html, body {
     padding: 0 40px;
   }
 
-  .search-bar-desktop {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--bg-search);
-    border-radius: 8px;
-    padding: 10px 14px;
-    font-size: 13px;
-    color: var(--text-gray);
-    max-width: 320px;
-    width: 100%;
+  .search-bar--desktop {
+  margin: 0;
+  max-width: 320px;
+  width: 100%;
   }
 
-  .search-bar-desktop input {
-    flex: 1;
-    border: none;
-    background: transparent;
+  .search-bar--desktop .search-bar__icon {
     font-size: 13px;
-    color: var(--text-dark);
   }
 
-  .search-bar-desktop input:focus {
-    outline: none;
+  .search-bar--desktop .search-bar__input {
+    font-size: 13px;
   }
 
   .filter-tabs {
@@ -928,62 +957,43 @@ html, body {
     color: var(--text-gray);
   }
 
-  .filter-tabs .filter-label {
+  .filter-tabs__label {
     color: var(--text-dark);
     font-weight: 600;
   }
 
-  .filter-tabs a {
+  .filter-tabs__link {
     text-decoration: none;
     color: inherit;
     padding-bottom: 10px;
   }
 
-  .filter-tabs a.active {
+  .filter-tabs__link.is-active {
     color: var(--pink-primary);
     font-weight: 600;
     border-bottom: 2px solid var(--pink-primary);
   }
 
-  .people-grid {
+  .l-people-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
 
-  .people-stack {
+  .l-people-stack {
     display: flex;
     flex-direction: column;
   }
 
-  .people-grid,
-  .people-stack {
+  .l-people-grid,
+  .l-people-stack {
     max-width: 1160px;
     margin: 24px auto 0;
     padding: 0 40px;
   }
 
-  .person-card {
-    padding: 16px 0;
-    border-top: 1px solid var(--border-light);
-  }
-
-  .person-card .person-name {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 6px;
-  }
-
-  .person-card .person-role,
-  .person-card .person-location {
-    font-size: 12px;
-    color: var(--text-gray);
-    margin-bottom: 4px;
-  }
-
-  .person-card .person-location {
-    margin-bottom: 12px;
+  .person-card__action.button--solid {
+    background: var(--pink-primary);
   }
 
   .activity-section,
@@ -1029,12 +1039,12 @@ html, body {
     white-space: nowrap;
   }
 
-  .jobs-heading .caret {
+  .jobs-heading__caret {
     font-size: 14px;
     color: var(--text-gray);
   }
 
-  .job-grid {
+  .l-job-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -1053,24 +1063,21 @@ html, body {
     padding: 20px;
   }
 
-  .desktop-view .job-info h3 {
+  .job-card__title {
     font-size: 15px;
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 6px;
   }
 
-  .desktop-view .job-info p {
+  .job-card__subtitle,
+  .job-card__meta {
     font-size: 12px;
     color: var(--text-gray);
     margin-bottom: 4px;
   }
 
-  .desktop-view .job-info .posted {
-    margin-bottom: 14px;
-  }
-
-  .desktop-view .job-image {
+  .job-card__image {
     width: 90px;
     height: 90px;
     flex-shrink: 0;
@@ -1079,6 +1086,5 @@ html, body {
     background-size: cover;
     background-position: center;
   }
-
 }
 

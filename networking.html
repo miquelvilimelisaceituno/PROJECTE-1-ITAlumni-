@@ -11,140 +11,138 @@
     <script src="filtro.js" defer></script>
 </head>
 <body>
-  <div class="mobile-view">
-    <div class="app-page">
+  <div class="l-mobile-view">
+    <div class="l-app-page">
     <header class="app-header">
       <a href="home.html" class="icon-btn" aria-label="Enrere">&#8592;</a>
-      <h1>Networking</h1>
+      <h1>Xarxa</h1>
       <div class="avatar"></div>
     </header>
 
     <div class="search-bar">
-      <span class="icon">&#128269;</span>
-      <input type="search" placeholder="Search alumni...">
+      <span class="search-bar__icon">&#128269;</span>
+      <input type="search" class="search-bar__input" placeholder="Search alumni...">
     </div>
 
-      <main class="app-content">
-      <div class="people-list" data-filter-list>
-        <article class="person-row" data-filter-item data-id="john-doe">
-          <div class="person-info">
-            <h3>John Doe</h3>
-            <p class="class-year">Class of 2010</p>
-            <p class="role">CEO at TechSolutions Inc.</p>
-          </div>
-          <div class="person-image"></div>
-        </article>
-        <article class="person-row" data-filter-item data-id="sarah-johnson">
-          <div class="person-info">
-            <h3>Sarah Johnson</h3>
-            <p class="class-year">Class of 2015</p>
-            <p class="role">Marketing Director at GreenWave</p>
-          </div>
-          <div class="person-image"></div>
-        </article>
-
-        <article class="person-row" data-filter-item data-id="michael-brown">
-          <div class="person-info">
-            <h3>Michael Brown</h3>
-            <p class="class-year">Class of 2008</p>
-            <p class="role">Founder of EduLearn Academy</p>
-          </div>
-          <div class="person-image"></div>
-        </article>
-        <article class="person-row" data-filter-item data-id="emily-davis">
-          <div class="person-info">
-            <h3>Emily Davis</h3>
-            <p class="class-year">Class of 2012</p>
-            <p class="role">Research Scientist at BioTech Labs</p>
-          </div>
-          <div class="person-image"></div>
-        </article>
-
-        <article class="person-row" data-filter-item data-id="james-lee">
-          <div class="person-info">
-            <h3>James Lee</h3>
-            <p class="class-year">Class of 2005</p>
-            <p class="role">Managing Partner at Lee &amp; Associates</p>
-          </div>
-          <div class="person-image"></div>
-        </article>
-      </div>
+      <main class="l-app-content">
+      <div class="l-people-list" data-filter-list>
+      <article class="person-card person-card--row" data-filter-item data-id="john-doe">
+        <div class="person-card__info">
+          <h3 class="person-card__name">John Doe</h3>
+          <p class="person-card__meta person-card__meta--accent">Class of 2010</p>
+          <p class="person-card__meta">CEO at TechSolutions Inc.</p>
+        </div>
+        <div class="person-card__image"></div>
+      </article>
+      <article class="person-card person-card--row" data-filter-item data-id="sarah-johnson">
+        <div class="person-card__info">
+          <h3 class="person-card__name">Sarah Johnson</h3>
+          <p class="person-card__meta person-card__meta--accent">Class of 2015</p>
+          <p class="person-card__meta">Marketing Director at GreenWave</p>
+        </div>
+        <div class="person-card__image"></div>
+      </article>
+      <article class="person-card person-card--row" data-filter-item data-id="michael-brown">
+        <div class="person-card__info">
+          <h3 class="person-card__name">Michael Brown</h3>
+          <p class="person-card__meta person-card__meta--accent">Class of 2008</p>
+          <p class="person-card__meta">Founder of EduLearn Academy</p>
+        </div>
+        <div class="person-card__image"></div>
+      </article>
+      <article class="person-card person-card--row" data-filter-item data-id="emily-davis">
+        <div class="person-card__info">
+          <h3 class="person-card__name">Emily Davis</h3>
+          <p class="person-card__meta person-card__meta--accent">Class of 2012</p>
+          <p class="person-card__meta">Research Scientist at BioTech Labs</p>
+        </div>
+        <div class="person-card__image"></div>
+      </article>
+      <article class="person-card person-card--row" data-filter-item data-id="james-lee">
+        <div class="person-card__info">
+          <h3 class="person-card__name">James Lee</h3>
+          <p class="person-card__meta person-card__meta--accent">Class of 2005</p>
+          <p class="person-card__meta">Managing Partner at Lee &amp; Associates</p>
+        </div>
+        <div class="person-card__image"></div>
+      </article>
+    </div>
     </main>
 
     <nav class="bottom-nav">
-      <a href="home.html" class="nav-item">
-        <span class="nav-icon">&#127968;</span>
+      <a href="home.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#127968;</span>
         Inici
       </a>
-      <a href="networking.html" class="nav-item active">
-        <span class="nav-icon">&#128101;</span>
-        Networking
+      <a href="networking.html" class="bottom-nav__item is-active">
+        <span class="bottom-nav__icon">&#128101;</span>
+        Xarxa
       </a>
-      <a href="jobPortal.html" class="nav-item">
-        <span class="nav-icon">&#128188;</span>
-        Job Portal
+      <a href="jobPortal.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#128188;</span>
+        Oportunitats de feina
       </a>
-      <a href="ProfileUpdate.html" class="nav-item">
-        <span class="nav-icon">&#128100;</span>
+      <a href="ProfileUpdate.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#128100;</span>
         Profile
       </a>
     </nav>
   </div>
   </div>
-  <div class="desktop-view">
+  <div class="l-desktop-view">
 
     <header class="navbar">
-      <div class="nav-logo"><span class="mark">&#9650;</span>Alumni Connect</div>
-      <nav class="nav-links">
-        <a href="dashboard.html">Inici</a>
-        <a href="#" class="active">Networking</a>
-        <a href="jobPortal.html">Job Opportunities</a>
+      <div class="navbar__wordmark"><span class="navbar__wordmark-mark">&#9650;</span>Alumni Connect</div>
+      <nav class="navbar__links">
+        <a href="home.html" class="navbar__link">Inici</a>
+        <a href="#" class="navbar__link is-active">Xarxa</a>
+        <a href="jobPortal.html" class="navbar__link">Oportunitats de feina</a>
       </nav>
-      <div class="nav-icons">
+      <div class="navbar__icons">
         <span>&#128269;</span>
         <span>&#128276;</span>
         <span>&#9881;</span>
-        <div class="avatar"></div>
+        <div class="avatar navbar__avatar"></div>
       </div>
     </header>
 
     <div class="networking-toolbar">
-      <div class="search-bar-desktop">
-        <span class="icon">&#128269;</span>
-        <input type="search" placeholder="Search alumni...">
+      <div class="search-bar search-bar--desktop">
+        <span class="search-bar__icon">&#128269;</span>
+        <input type="search" class="search-bar__input" placeholder="Search alumni...">
       </div>
       <div class="filter-tabs">
-        <span class="filter-label">Filters:</span>
-        <a href="#">Recent Activity</a>
-        <a href="#" data-sort="popular" class="active">Popular </a>
-        <a href="#">Most Connected</a>
+        <span class="filter-tabs__label">Filters:</span>
+        <a href="#" class="filter-tabs__link">Recent Activity</a>
+        <a href="#" data-sort="popular" class="filter-tabs__link is-active">Popular </a>
+        <a href="#" class="filter-tabs__link">Most Connected</a>
       </div>
     </div>
 
-    <div class="people-grid" data-filter-list>
+    <div class="l-people-grid" data-filter-list>
       <article class="person-card" data-filter-item data-id="jane-smith">
-        <div class="person-name">Jane Smith</div>
-        <p class="person-role">Co-Founder at ABC Inc</p>
-        <p class="person-location">New York, NY</p>
-        <a href="#" class="btn btn-solid btn-pill">Message</a>
+        <div class="person-card__name">Jane Smith</div>
+        <p class="person-card__meta">Co-Founder at ABC Inc</p>
+        <p class="person-card__meta">New York, NY</p>
+        <a href="#" class="person-card__action button button--solid button--pill">Message</a>
       </article>
       <article class="person-card" data-filter-item data-id="john-doe">
-        <div class="person-name">John Doe</div>
-        <p class="person-role">Product Manager at XYZ Corp</p>
-        <p class="person-location">San Francisco, CA</p>
-        <a href="#" class="btn btn-solid btn-pill">Message</a>
+        <div class="person-card__name">John Doe</div>
+        <p class="person-card__meta">Product Manager at XYZ Corp</p>
+        <p class="person-card__meta">San Francisco, CA</p>
+        <a href="#" class="person-card__action button button--solid button--pill">Message</a>
       </article>
       <article class="person-card" data-filter-item data-id="alice-johnson">
-        <div class="person-name">Alice Johnson</div>
-        <p class="person-role">Senior Developer at Tech Solutions</p>
-        <p class="person-location">Remote</p>
-        <a href="#" class="btn btn-solid btn-pill">Message</a>
+        <div class="person-card__name">Alice Johnson</div>
+        <p class="person-card__meta">Senior Developer at Tech Solutions</p>
+        <p class="person-card__meta">Remote</p>
+        <a href="#" class="person-card__action button button--solid button--pill">Message</a>
       </article>
       <article class="person-card" data-filter-item data-id="david-brown">
-        <div class="person-name">David Brown</div>
-        <p class="person-role">Marketing Specialist at Brand Co</p>
-        <p class="person-location">Chicago, IL</p>
-        <a href="#" class="btn btn-solid btn-pill">Message</a>
+        <div class="person-card__name">David Brown</div>
+        <p class="person-card__meta">Marketing Specialist at Brand Co</p>
+        <p class="person-card__meta">Chicago, IL</p>
+        <a href="#" class="person-card__action button button--solid button--pill">Message</a>
       </article>
     </div>
 
@@ -160,30 +158,30 @@
 
     <section class="suggestions-section">
       <h2>Suggestions for You</h2>
-      <div class="people-stack">
+      <div class="l-people-stack">
         <article class="person-card" data-filter-item data-id="jane-smith">
           <div class="person-name">Jane Smith</div>
           <p class="person-role">Co-Founder at ABC Inc</p>
           <p class="person-location">New York, NY</p>
-          <a href="#" class="btn btn-solid btn-pill">Connect</a>
+          <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
         </article>
         <article class="person-card" data-filter-item data-id="john-doe">
           <div class="person-name">John Doe</div>
           <p class="person-role">Product Manager at XYZ Corp</p>
           <p class="person-location">San Francisco, CA</p>
-          <a href="#" class="btn btn-solid btn-pill">Connect</a>
+          <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
         </article>
         <article class="person-card" data-filter-item data-id="alice-johnson">
           <div class="person-name">Alice Johnson</div>
           <p class="person-role">Senior Developer at Tech Solutions</p>
           <p class="person-location">Remote</p>
-          <a href="#" class="btn btn-solid btn-pill">Connect</a>
+          <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
         </article>
         <article class="person-card" data-filter-item data-id="david-brown">
           <div class="person-name">David Brown</div>
           <p class="person-role">Marketing Specialist at Brand Co</p>
           <p class="person-location">Chicago, IL</p>
-          <a href="#" class="btn btn-solid btn-pill">Connect</a>
+          <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
         </article>
       </div>
     </section>

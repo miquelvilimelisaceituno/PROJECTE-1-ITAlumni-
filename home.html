@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="mobile-view">
-    <div class="app-page">
+  <div class="l-mobile-view">
+    <div class="l-app-page">
 
       <header class="app-header">
         <button class="icon-btn" aria-label="Desats">&#128203;</button>
@@ -22,144 +22,142 @@
       </header>
 
       <div class="search-bar">
-        <span class="icon">&#128269;</span>
-        <input type="search" placeholder="Search alumni...">
+        <span class="search-bar__icon">&#128269;</span>
+        <input type="search" class="search-bar__input" placeholder="Search alumni...">
       </div>
 
-      <main class="app-content">
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-image"></div>
-            <h3>Networking</h3>
-            <p>Connect with professionals in your field.</p>
-            <a href="networking.html" class="btn btn-outline btn-card">Explore</a>
-          </article>
-
-          <article class="card">
-            <div class="card-image"></div>
-            <h3>Job Opportunities</h3>
-            <p>Discover openings tailored to your skills.</p>
-            <a href="jobPortal.html" class="btn btn-outline btn-card">Search Jobs</a>
-          </article>
-        </div>
+      <main class="l-app-content">
+        <div class="l-card-grid">
+        <article class="feature-card">
+          <div class="feature-card__image"></div>
+          <h3 class="feature-card__title">Networking</h3>
+          <p class="feature-card__text">Connect with professionals in your field.</p>
+          <a href="networking.html" class="button button--outline button--block button--small">Explore</a>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__image"></div>
+          <h3 class="feature-card__title">Job Opportunities</h3>
+          <p class="feature-card__text">Discover openings tailored to your skills.</p>
+          <a href="jobPortal.html" class="button button--outline button--block button--small">Search Jobs</a>
+        </article>
+      </div>
       </main>
       <footer>
         <nav class="bottom-nav">
-          <a href="home.html" class="nav-item active">
-            <span class="nav-icon">&#127968;</span>
-          Home
+          <a href="home.html" class="bottom-nav__item is-active">
+            <span class="bottom-nav__icon">&#127968;</span>
+          Inici
           </a>
-          <a href="networking.html" class="nav-item">
-          <span class="nav-icon">&#128101;</span>
-          Networking
+          <a href="networking.html" class="bottom-nav__item">
+          <span class="bottom-nav__icon">&#128101;</span>
+          Xarxa
           </a>
-          <a href="jobPortal.html" class="nav-item">
-          <span class="nav-icon">&#128188;</span>
-          Job Portal
+          <a href="jobPortal.html" class="bottom-nav__item">
+          <span class="bottom-nav__icon">&#128188;</span>
+          Oportunitats de feina
           </a>
-          <a href="ProfileUpdate.html" class="nav-item">
-            <span class="nav-icon">&#128100;</span>
+          <a href="ProfileUpdate.html" class="bottom-nav__item">
+            <span class="bottom-nav__icon">&#128100;</span>
             Profile
           </a>
         </nav>
       </footer>
     </div>
   </div>
-  <div class="desktop-view">
+  <div class="l-desktop-view">
     <header class="navbar">
       <img src="images/welcome-logo.png" alt="XLUMNI" class="brand-logo">
-      <nav class="nav-links">
-        <a href="home.html" class="active">Inici</a>
-        <a href="networking.html">Xarxa</a>
-        <a href="jobPortal.html">Oportunitats de feina</a>
+      <nav class="navbar__links">
+        <a href="home.html" class="navbar__link is-active">Inici</a>
+        <a href="networking.html" class="navbar__link">Xarxa</a>
+        <a href="jobPortal.html" class="navbar__link">Oportunitats de feina</a>
       </nav>
-      <div class="nav-actions">
-        <a href="signup.html" class="btn btn-outline btn-pill">Apunta't</a>
-        <a href="#" class="btn btn-solid btn-pill">Com et veuen?</a>
+      <div class="navbar__actions">
+        <a href="signup.html" class="button button--outline button--pill">Apunta't</a>
+        <a href="#" class="button button--outline button--pill">Com et veuen?</a>
       </div>
     </header>
-    <section class="hero">
-      <h1>Benvingut, Alumni</h1>
-      <p>Connectant i empoderant a la nostra comunitat global d'alumnes</p>
-      <div class="hero-actions">
-        <a href="signup.html" class="btn btn-solid btn-pill">Uneix-te</a>
-        <a href="#" class="btn btn-outline btn-pill">Mira que fem</a>
-      </div>
-      <div class="hero-media">
-        <!-- tu imagen/vídeo manual, ej: <img src="hero.jpg" alt=""> -->
-      </div>
-    </section>
+      <section class="hero">
+        <h1 class="hero__title">Benvingut, Alumni</h1>
+        <p class="hero__text">Connectant i empoderant a la nostra comunitat global d'alumnes</p>
+        <div class="hero__actions">
+          <a href="signup.html" class="button button--outline button--pill">Uneix-te</a>
+          <a href="#" class="button button--outline button--pill">Mira que fem</a>
+        </div>
+        <div class="hero__media">
+          <img src="images/image-home.png" alt="Imagen del hero" class="hero__image">
+        </div>
+      </section>
     <section class="benefits">
-      <h2>Què guanyes en formar-ne part?</h2>
-      <div class="benefits-grid">
+      <h2 class="benefits__title">Què guanyes en formar-ne part?</h2>
+      <div class="l-benefits-grid">
         <article class="benefit-card">
-          <div class="icon">&#127891;</div>
-          <p>Comparteix i no perdis el contacte: Puja els teus moments importants, explica com va anar i queda amb els teus companys. Una xarxa per estar més a prop.</p>
-          <a href="#" class="btn btn-solid btn-pill">Apunta't ja</a>
+          <div class="benefit-card__icon">&#127891;</div>
+          <p class="benefit-card__text">Comparteix i no perdis el contacte: Puja els teus moments importants, explica com va anar i queda amb els teus companys. Una xarxa per estar més a prop.</p>
+          <a href="#" class="button button--light button--pill">Apunta't ja</a>
         </article>
         <article class="benefit-card">
-          <div class="icon">&#128172;</div>
-          <p>Participa en discussions: Intercanvia coneixements, punts de vista i opinions sobre temes que t'interessen.</p>
-          <a href="#" class="btn btn-light btn-pill">Apunta't ja</a>
+          <div class="benefit-card__icon">&#128172;</div>
+          <p class="benefit-card__text">Participa en discussions: Intercanvia coneixements, punts de vista i opinions sobre temes que t'interessen.</p>
+          <a href="#" class="button button--light button--pill">Apunta't ja</a>
         </article>
         <article class="benefit-card">
-          <div class="icon">&#128101;</div>
-          <p>Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats i crea records per durar tota la vida.</p>
-          <a href="#" class="btn btn-light btn-pill">Apunta't ja</a>
+          <div class="benefit-card__icon">&#128101;</div>
+          <p class="benefit-card__text">Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats i crea records per durar tota la vida.</p>
+          <a href="#" class="button button--light button--pill">Apunta't ja</a>
         </article>
       </div>
     </section>
     <section class="testimonials">
-      <h2>"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
-      <div class="testimonial-grid">
+      <h2 class="testimonials__title">"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
+      <div class="l-testimonial-grid">
         <article class="testimonial-card">
-          <div class="person">
-            <div class="avatar"></div>
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar"></div>
             <div>
-              <div class="name">Mikel</div>
-              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div class="testimonial-card__name">Mikel</div>
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
           </div>
-          <p class="quote">"Gràcies a IT Alumni vaig aconseguir la feina dels meus somnis en el món tech amb el seu increïble programa de mentoria."</p>
+          <p class="testimonial-card__quote">"Gràcies a IT Alumni vaig aconseguir la feina dels meus somnis en el món tech amb el seu increïble programa de mentoria."</p>
         </article>
         <article class="testimonial-card">
-          <div class="person">
-            <div class="avatar"></div>
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar"></div>
             <div>
-              <div class="name">Emma</div>
-              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div class="testimonial-card__name">Emma</div>
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
           </div>
-          <p class="quote">"La meva xarxa d'aquesta comunitat ha estat clau: va revolucionar la meva carrera i em va mostrar camins insospitats."</p>
+          <p class="testimonial-card__quote">"La meva xarxa d'aquesta comunitat ha estat clau: va revolucionar la meva carrera i em va mostrar camins insospitats."</p>
         </article>
         <article class="testimonial-card">
-          <div class="person">
-            <div class="avatar"></div>
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar"></div>
             <div>
-              <div class="name">Laia</div>
-              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div class="testimonial-card__name">Laia</div>
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
           </div>
-          <p class="quote">"IT Alumni em va donar les eines i l'autoestima per fer realitat el meu somni d'emprendre."</p>
+          <p class="testimonial-card__quote">"IT Alumni em va donar les eines i l'autoestima per fer realitat el meu somni d'emprendre."</p>
         </article>
       </div>
-      <div class="carousel-nav">
-        <button type="button" aria-label="Anterior">&#8249;</button>
-        <button type="button" aria-label="Següent">&#8250;</button>
+      <div class="testimonials__nav">
+        <button type="button" class="testimonials__nav-button" aria-label="Anterior">&#8249;</button>
+        <button type="button" class="testimonials__nav-button" aria-label="Següent">&#8250;</button>
       </div>
     </section>
-    <footer class="footer">
-      <div class="newsletter">
-        <h3>"No et perdis res, subscriu-te!"</h3>
-        <form class="newsletter-form">
-          <input type="email" placeholder="El teu email" required>
-          <button type="submit">Subscriu-te</button>
+    <footer class="site-footer">
+      <div class="site-footer__newsletter">
+        <h3 class="site-footer__newsletter-title">"No et perdis res, subscriu-te!"</h3>
+        <form class="site-footer__newsletter-form">
+          <input type="email" class="site-footer__newsletter-input" placeholder="El teu email" required>
+          <button type="submit" class="site-footer__newsletter-button">Subscriu-te</button>
         </form>
       </div>
-
-      <div class="footer-main">
+      <div class="site-footer__main">
         <img src="images/logo-footer.png" alt="XLUMNI" class="brand-logo brand-logo--footer">
-        <nav class="footer-links">
+        <nav class="site-footer__links">
           <a href="#">Sobre nosaltres</a>
           <a href="#">Funcionalitats</a>
           <a href="#">Centre d'ajuda</a>
@@ -169,10 +167,10 @@
         </nav>
       </div>
 
-      <div class="footer-bottom">
+      <div class="site-footer__bottom">
         <select><option>Català</option></select>
         <p>© 2026 Xllumni · Privadesa · Termes d'ús</p>
-        <div class="social-icons">
+        <div class="site-footer__socials">
           <a href="#" aria-label="Facebook">f</a>
           <a href="#" aria-label="LinkedIn">in</a>
           <a href="#" aria-label="YouTube">&#9658;</a>
