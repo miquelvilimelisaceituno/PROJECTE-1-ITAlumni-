@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecte 1 ITAlumni - Job Portal page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="l-mobile-view">
+    <div class="l-app-page">
+
+    <header class="app-header">
+      <a href="home.html" class="icon-btn" aria-label="Enrere">&#8592;</a>
+      <h1>Oportunitats de feina</h1>
+      <div class="avatar"></div>
+    </header>
+
+    <div class="search-bar">
+      <span class="search-bar__icon">&#128269;</span>
+      <input type="search" class="search-bar__input" placeholder="Search alumni...">
+    </div>
+
+    <div class="l-filter-chips">
+      <button type="button" class="filter-chip">Industry <span class="filter-chip__caret">&#9662;</span></button>
+      <button type="button" class="filter-chip">Experience Level <span class="filter-chip__caret">&#9662;</span></button>
+    </div>
+
+    <main class="l-app-content">
+      <div class="l-job-list">
+      <article class="job-card job-card--row">
+        <div class="job-card__info">
+          <h3 class="job-card__title">Marketing Role</h3>
+          <p class="job-card__subtitle">Marketing Specialist at XYZ</p>
+          <p class="job-card__meta">Remote | Apply by Nov 15</p>
+          <a href="#" class="job-card__action button button--outline button--small">Apply Now</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+
+      <article class="job-card job-card--row">
+        <div class="job-card__info">
+          <h3 class="job-card__title">Software Engineer</h3>
+          <p class="job-card__subtitle">Software Engineer at ABC</p>
+          <p class="job-card__meta">San Francisco | Apply by Nov 20</p>
+          <a href="#" class="job-card__action button button--outline button--small">Apply Now</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+
+      <article class="job-card job-card--row">
+        <div class="job-card__info">
+          <h3 class="job-card__title">Clinical Analyst</h3>
+          <p class="job-card__subtitle">Clinical Analyst at MediCare</p>
+          <p class="job-card__meta">New York | Apply by Nov 30</p>
+          <a href="#" class="job-card__action button button--outline button--small">Apply Now</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+
+      <article class="job-card job-card--row">
+        <div class="job-card__info">
+          <h3 class="job-card__title">Content Writer</h3>
+          <p class="job-card__subtitle">Content Writer at WritersHub</p>
+          <p class="job-card__meta">Remote | Apply by Dec 5</p>
+          <a href="#" class="job-card__action button button--outline button--small">Apply Now</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+    </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="home.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#127968;</span>
+        Inici
+      </a>
+      <a href="networking.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#128101;</span>
+        Xarxa
+      </a>
+      <a href="jobPortal.html" class="bottom-nav__item is-active">
+        <span class="bottom-nav__icon">&#128188;</span>
+        Oportunitats de feina
+      </a>
+      <a href="ProfileUpdate.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#128100;</span>
+        Profile
+      </a>
+    </nav>
+
+  </div>
+</div>
+
+<div class="l-desktop-view">
+
+    <header class="navbar">
+      <div class="navbar__wordmark"><span class="navbar__wordmark-mark">&#9650;</span>Alumni Connect</div>
+      <nav class="navbar__links">
+        <a href="home.html" class="navbar__link">Inici</a>
+        <a href="networking.html" class="navbar__link">Xarxa</a>
+        <a href="#" class="navbar__link is-active">Oportunitats de feina</a>
+      </nav>
+      <div class="navbar__icons">
+        <span>&#128269;</span>
+        <span>&#128276;</span>
+        <span>&#9881;</span>
+        <div class="avatar navbar__avatar"></div>
+      </div>
+    </header>
+
+    <h1 class="jobs-heading">Jobs <span class="jobs-heading__caret">&#9662;</span></h1>
+
+    <div class="l-job-grid">
+      <article class="job-card">
+        <div class="job-card__info">
+          <h3 class="job-card__title">Software Engineer</h3>
+          <p class="job-card__subtitle">Full-time position</p>
+          <p class="job-card__meta">Posted 3 days ago</p>
+          <a href="#" class="job-card__action button button--outline button--small">Apply Now</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+
+      <article class="job-card">
+        <div class="job-card__info">
+          <h3 class="job-card__title">Product Manager</h3>
+          <p class="job-card__subtitle">Remote opportunity</p>
+          <p class="job-card__meta">Posted 1 week ago</p>
+          <a href="#" class="job-card__action button button--outline button--small">Learn More</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+
+      <article class="job-card">
+        <div class="job-card__info">
+          <h3 class="job-card__title">Data Analyst</h3>
+          <p class="job-card__subtitle">Contract-based role</p>
+          <p class="job-card__meta">Posted 2 days ago</p>
+          <a href="#" class="job-card__action button button--outline button--small">View Details</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+
+      <article class="job-card">
+        <div class="job-card__info">
+          <h3 class="job-card__title">UX Designer</h3>
+          <p class="job-card__subtitle">Flexible hours</p>
+          <p class="job-card__meta">Posted 5 days ago</p>
+          <a href="#" class="job-card__action button button--outline button--small">Apply</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+
+      <article class="job-card">
+        <div class="job-card__info">
+          <h3 class="job-card__title">Marketing Lead</h3>
+          <p class="job-card__subtitle">Full-time role</p>
+          <p class="job-card__meta">Posted 1 day ago</p>
+          <a href="#" class="job-card__action button button--outline button--small">Get Started</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+
+      <article class="job-card">
+        <div class="job-card__info">
+          <h3 class="job-card__title">HR Specialist</h3>
+          <p class="job-card__subtitle">Part-time role</p>
+          <p class="job-card__meta">Posted 4 days ago</p>
+          <a href="#" class="job-card__action button button--outline button--small">Discover More</a>
+        </div>
+        <div class="job-card__image"></div>
+      </article>
+    </div>
+
+  </div>
+
+</body>
+</html>
