@@ -466,6 +466,8 @@ html, body {
   display: flex;
   gap: 20px;
   padding: 4px 20px 16px;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .filter-chip {
@@ -482,6 +484,11 @@ html, body {
 .filter-chip__caret {
   font-size: 10px;
   color: var(--text-gray);
+}
+
+.filter-chip.is-active,
+.filter-chip.is-active .filter-chip__caret {
+  color: var(--pink-primary);
 }
 
 .l-job-list {
@@ -1085,6 +1092,17 @@ html, body {
     background: var(--placeholder-bg);
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .l-filter-chips {
+    gap: 12px;
+    padding: 4px 16px 16px;
+  }
+
+  .filter-chip {
+    font-size: 12px;
   }
 }
 

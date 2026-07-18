@@ -23,6 +23,11 @@
       <span class="search-bar__icon">&#128269;</span>
       <input type="search" class="search-bar__input" placeholder="Search alumni...">
     </div>
+    <div class="l-filter-chips">
+      <button type="button" class="filter-chip">Activitat recent <span class="filter-chip__caret">&#9662;</span></button>
+      <button type="button" class="filter-chip" data-sort="popular">Popular <span class="filter-chip__caret">&#9662;</span></button>
+      <button type="button" class="filter-chip">Mes conectat <span class="filter-chip__caret">&#9662;</span></button>
+    </div>
 
       <main class="l-app-content">
       <div class="l-people-list" data-filter-list>
@@ -113,9 +118,9 @@
       </div>
       <div class="filter-tabs">
         <span class="filter-tabs__label">Filters:</span>
-        <a href="#" class="filter-tabs__link">Recent Activity</a>
+        <a href="#" class="filter-tabs__link">Activitat recent</a>
         <a href="#" data-sort="popular" class="filter-tabs__link is-active">Popular </a>
-        <a href="#" class="filter-tabs__link">Most Connected</a>
+        <a href="#" class="filter-tabs__link">Mes conectat</a>
       </div>
     </div>
 
@@ -147,7 +152,7 @@
     </div>
 
     <section class="activity-section">
-      <h2>Recent Activity</h2>
+      <h2>Activitat recent</h2>
       <ul class="activity-list">
         <li>Jane Smith started following John Doe</li>
         <li>David Brown and John Doe connected</li>
@@ -160,28 +165,28 @@
       <h2>Suggestions for You</h2>
       <div class="l-people-stack">
         <article class="person-card" data-filter-item data-id="jane-smith">
-          <div class="person-name">Jane Smith</div>
-          <p class="person-role">Co-Founder at ABC Inc</p>
-          <p class="person-location">New York, NY</p>
-          <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
+          <div class="person-card__name">Jane Smith</div>
+            <p class="person-card__meta">Co-Founder at ABC Inc</p>
+            <p class="person-card__meta">New York, NY</p>
+            <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
         </article>
         <article class="person-card" data-filter-item data-id="john-doe">
-          <div class="person-name">John Doe</div>
-          <p class="person-role">Product Manager at XYZ Corp</p>
-          <p class="person-location">San Francisco, CA</p>
-          <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
+          <div class="person-card__name">John Doe</div>
+            <p class="person-card__meta">Product Manager at XYZ Corp</p>
+            <p class="person-card__meta">San Francisco, CA</p>
+            <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
         </article>
         <article class="person-card" data-filter-item data-id="alice-johnson">
-          <div class="person-name">Alice Johnson</div>
-          <p class="person-role">Senior Developer at Tech Solutions</p>
-          <p class="person-location">Remote</p>
-          <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
+          <div class="person-card__name">Alice Johnson</div>
+            <p class="person-card__meta">Senior Developer at Tech Solutions</p>
+            <p class="person-card__meta">Remote</p>
+            <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
         </article>
         <article class="person-card" data-filter-item data-id="david-brown">
-          <div class="person-name">David Brown</div>
-          <p class="person-role">Marketing Specialist at Brand Co</p>
-          <p class="person-location">Chicago, IL</p>
-          <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
+          <div class="person-card__name">David Brown</div>
+            <p class="person-card__meta">Marketing Specialist at Brand Co</p>
+            <p class="person-card__meta">Chicago, IL</p>
+            <a href="#" class="person-card__action button button--solid button--pill">Connect</a>
         </article>
       </div>
     </section>
