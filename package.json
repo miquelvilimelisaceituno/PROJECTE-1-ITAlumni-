@@ -1,0 +1,27 @@
+{
+  "name": "projecte-1-italumni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "filtro.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miquelvilimelisaceituno/PROJECTE-1-ITAlumni-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/miquelvilimelisaceituno/PROJECTE-1-ITAlumni-/issues"
+  },
+  "homepage": "https://github.com/miquelvilimelisaceituno/PROJECTE-1-ITAlumni-#readme",
+  "devDependencies": {
+    "jsdom": "^29.1.1",
+    "vitest": "^4.1.10"
+  }
+  
+}
+

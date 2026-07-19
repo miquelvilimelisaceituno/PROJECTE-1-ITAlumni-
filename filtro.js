@@ -52,3 +52,5 @@ document.querySelectorAll('.search-bar__input').forEach((input) => {
     });
   });
 });
+
+export { ordenarPorPopularidad, filtrarPorTexto, marcarActivo };
